@@ -1,12 +1,18 @@
-\name{hello}
-\alias{hello}
-\title{Hello, World!}
+\name{trevoR}
+\alias{trevoR}
+\title{trevoR}
 \usage{
-hello()
+breakFiles(),
+breakRow(),
+breakFraction()
 }
 \description{
-Prints 'Hello, world!'.
+Provides support for breaking CSV files by either row count or fractions.
+More functions are forthcoming.
 }
 \examples{
-hello()
+breakFile(dataSource, outwd, 3, filename = "Budget", "fraction"),
+breakFile(dataSource, outwd, 100, filename = "Budget", "row"),
+breakRow(dataSource, outwd, 100, filename = "Budget"),
+breakFraction(dataSource, outwd, 3, filename = "Budget")
 }
