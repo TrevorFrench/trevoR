@@ -5,10 +5,8 @@
 #-Add "arrange" support (arrange the file by column desc/asc before breaking)
 #-Add Combine File functions
 #-------------------------------------------------------------------------------
-#---------------------BREAK FILE BY NUMBER OF ROWS PER FILE---------------------
+#------------------------BREAK FILE BY ROWS OR BY FRACTION----------------------
 #-------------------------------------------------------------------------------
-#filetype,
-#, arrange
 
 breakFile <- function(input, output, n, filename, method) {
   if(method == "row") {
@@ -24,6 +22,10 @@ breakFile <- function(input, output, n, filename, method) {
   }
 
 }
+
+#-------------------------------------------------------------------------------
+#----------------------BREAK FILE BY NUMBER OF ROWS PER FILE--------------------
+#-------------------------------------------------------------------------------
 
 breakRow <- function(input, output, n, filename) {
   rawData <- read.csv(input)
@@ -59,6 +61,10 @@ breakRow <- function(input, output, n, filename) {
   }
 
 }
+
+#-------------------------------------------------------------------------------
+#----------------------BREAK FILE BY NUMBER OF FILES DESIRED--------------------
+#-------------------------------------------------------------------------------
 
 breakFraction <- function(input, output, n, filename) {
   rawData <- read.csv(input)
