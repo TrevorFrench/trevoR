@@ -25,9 +25,11 @@ install.packages("remotes")
 remotes::install_github("TrevorFrench/trevoR")
 ```
 
-Functions: breakFile, breakRow, breakFraction
+## Functions: 
 
-breakFile(input, output, n, filename, method)
+breakFile, breakRow, breakFraction
+
+### breakFile(input, output, n, filename, method)
 - input: the file path/name of the csv you wish to break.
 - output: the folder where your broken files will be written to.
 - n: the number of rows you want your file to contain if your method is "row" or the number of files you want your original file broken into if your method is "fraction".
@@ -47,7 +49,7 @@ outwd <- paste(wd, "Output/Budget/", sep='')
 breakFile(dataSource, outwd, 1000, "Budget", "row")
 ```
 
-breakRow(input, output, n, filename)
+### breakRow(input, output, n, filename)
 - input: the file path/name of the csv you wish to break.
 - output: the folder where your broken files will be written to.
 - n: the number of rows you want your broken files to contain.
@@ -66,7 +68,7 @@ outwd <- paste(wd, "Output/Budget/", sep='')
 breakRow(dataSource, outwd, 1000, "Budget")
 ```
 
-breakFraction(input, output, n, filename)
+### breakFraction(input, output, n, filename)
 - input: the file path/name of the csv you wish to break.
 - output: the folder where your broken files will be written to.
 - n: the number of files you want your original file broken into.
@@ -84,6 +86,12 @@ outwd <- paste(wd, "Output/Budget/", sep='')
 
 breakFraction(dataSource, outwd, 3, "Budget")
 ```
+
+
+## ACTION LIST
+- Add "filetype" support (excel files, test files, etc.)
+- Add "arrange" support (arrange the file by column desc/asc before breaking)
+- Add combineFile functions
 
 ## Logo
 
