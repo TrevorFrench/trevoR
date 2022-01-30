@@ -1,1 +1,8 @@
 exportPattern("^[[:alpha:]]+")
+import(purrr)
+importFrom("utils", "read.csv", "write.csv")
+
+export(breakFile)
+export(breakFraction)
+export(breakRow)
+export(combineFiles)

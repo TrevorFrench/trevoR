@@ -9,3 +9,5 @@ Description: This package currently includes support for breaking CSV files.
 License: GPL
 Encoding: UTF-8
 LazyData: true
+Imports: purrr
+RoxygenNote: 7.1.2

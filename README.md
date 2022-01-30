@@ -2,7 +2,7 @@
 
 ![hexLogo](/man/figures/hexLogo.png)
 
-trevoR does not currently have any dependencies.
+trevoR is currently only dependent on the purrr package.
 
 ## :writing_hand: Author
 
@@ -87,11 +87,19 @@ outwd <- paste(wd, "Output/Budget/", sep='')
 breakFraction(dataSource, outwd, 3, "Budget")
 ```
 
+### combineFiles(input)
+- input: the file path which contains the directory where your files are stored.
+- The following example demonstrates all csv files in a specified directory into one dataframe:
+```r
+wd <- "C:/YOURWORKINGDIRECTORY"
+combineFiles(wd)
+```
+
 
 ## ACTION LIST
 - Add "filetype" support (excel files, test files, etc.)
 - Add "arrange" support (arrange the file by column desc/asc before breaking)
-- Add combineFile functions
+- Add filetype support for combineFiles
 
 ## Logo
 
