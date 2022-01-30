@@ -10,7 +10,7 @@ Trevor French <https://trevorfrench.com>
 
 ## :arrow_double_down: Installation
 
-Install the hexSticker package via CRAN:
+Install the trevoR package via CRAN:
 
 
 ```r
