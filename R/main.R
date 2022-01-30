@@ -28,7 +28,12 @@ breakFile <- function(input, output, n, filename, method) {
 breakRow <- function(input, output, n, filename) {
   rawData <- read.csv(input)
   numRows <- nrow(rawData)
-  splitRows <- if_else((numRows / n) > 1, ceiling((numRows / n)), 1)
+
+  splitRows <- 1
+
+  if((numRows / n) > 1){
+    splitRows <- ceiling((numRows / n))
+  }
 
   begNum <- 1
 
@@ -84,14 +89,3 @@ breakFraction <- function(input, output, n, filename) {
    write.csv(df, outputFile, row.names = F)
 
 }
-
-#breakbyfraction
-#breakbyrow
-
-#Reads in raw data file
-wd <- "C:/Users/Trevor French/OneDrive - TaxBit/Desktop/R Scripts/Files/"
-
-#READ CSV
-dataSource <- paste(wd, "Input/Gemini.csv", sep='')
-outwd <- paste(wd, "Input/testpackage/", sep='')
-

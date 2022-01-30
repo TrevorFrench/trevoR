@@ -6,6 +6,6 @@ Author: Trevor French
 Maintainer: The package maintainer <frenchtrevor@outlook.com>
 Description: This package currently includes support for breaking CSV files.
     More functions are forthcoming.
-License: What license is it under?
+License: GPL
 Encoding: UTF-8
 LazyData: true
