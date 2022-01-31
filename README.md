@@ -27,7 +27,7 @@ remotes::install_github("TrevorFrench/trevoR")
 
 ## Functions: 
 
-breakFile, breakRow, breakFraction
+breakFile, breakRow, breakFraction, combineFiles
 
 ### breakFile(input, output, n, filename, method)
 - input: the file path/name of the csv you wish to break.
