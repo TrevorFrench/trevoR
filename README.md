@@ -100,6 +100,7 @@ combineFiles(wd)
 - Add "filetype" support (excel files, test files, etc.)
 - Add "arrange" support (arrange the file by column desc/asc before breaking)
 - Add filetype support for combineFiles
+- Handle quoting in files for EOF errors (quote = "")
 
 ## Logo
 
