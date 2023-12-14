@@ -1,5 +1,5 @@
 # trevoR
-
+<a href='https://github.com/TrevorFrench/trevoR'><img src="https://raw.githubusercontent.com/TrevorFrench/trevoR/main/man/figures/hexLogo.png" align="right" height="300"/></a>
 ![hexLogo](/man/figures/hexLogo.png)
 
 trevoR is currently only dependent on the purrr package.
