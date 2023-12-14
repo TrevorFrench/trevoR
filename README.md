@@ -1,5 +1,5 @@
 # trevoR
-<a href='https://github.com/TrevorFrench/trevoR'><img src="https://raw.githubusercontent.com/TrevorFrench/trevoR/main/man/figures/hexLogo.png" align="right" height="300"/></a>
+<a href='https://github.com/TrevorFrench/trevoR'><img src="https://raw.githubusercontent.com/TrevorFrench/trevoR/main/man/figures/trevoR.png" align="right" height="300"/></a>
 
 trevoR is currently only dependent on the purrr package.
 
@@ -100,7 +100,3 @@ combineFiles(wd)
 - Add "arrange" support (arrange the file by column desc/asc before breaking)
 - Add filetype support for combineFiles
 - Handle quoting in files for EOF errors (quote = "")
-
-## Logo
-
-Logo was created with [hexSticker](https://github.com/GuangchuangYu/hexSticker).
